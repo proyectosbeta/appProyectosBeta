@@ -1,3 +1,7 @@
+#v0.2.0
+
+- [feat] Add book screen.
+
 #v0.1.1
 
 - [update] The package json file.
