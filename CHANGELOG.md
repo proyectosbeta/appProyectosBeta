@@ -1,6 +1,7 @@
 #v0.1.1
 
 - [update] The package json file.
+- [doc] Update the readme file.
 
 #v0.1.0
 
