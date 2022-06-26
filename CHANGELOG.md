@@ -1,4 +1,8 @@
-#v0.0.1
+#v0.1.1
+
+- [update] The package json file.
+
+#v0.1.0
 
 - [feat] Add home and settings screen.
 - [feat] Add prettier and eslint for developer.
