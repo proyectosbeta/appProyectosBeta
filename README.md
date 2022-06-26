@@ -16,18 +16,37 @@ The app for Proyectos Beta (proyectosbeta.net)
 
 # Development
 
-## Run
+One terminal:
 
 ```bash
 npm install
 npx react-native start
 ```
 
-## Compile and run
+Another terminal:
 
 ```bash
+cd android && ./gradlew clean && cd ../
 npx react-native run-android
 ```
+
+# Developer debug
+
+```bash
+cd android && ./gradlew assembleRelease && cd ../
+```
+
+# Production
+
+At the root of the project.
+
+```bash
+npx react-native run-android --variant=release
+```
+
+## APK path
+
+The apk is in android/app/build/outputs/apk/release/
 
 ## Quality code 
 
