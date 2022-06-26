@@ -2,6 +2,7 @@
 
 - [update] The package json file.
 - [doc] Update the readme file.
+- [feat] Add sonarqube.
 
 #v0.1.0
 
