@@ -1,6 +1,7 @@
 #v0.2.0
 
 - [feat] Add book screen.
+- [feat] Add splash screen.
 
 #v0.1.1
 
