@@ -1,6 +1,7 @@
 #v0.3.0
 
 - [feat] Consume the books endpoint.
+- [refactor] Books data.
 
 #v0.2.0
 
