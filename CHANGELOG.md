@@ -2,6 +2,7 @@
 
 - [feat] Consume the books endpoint.
 - [refactor] Books data.
+- [docs] Update readme file.
 
 #v0.2.0
 
