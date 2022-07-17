@@ -7,8 +7,8 @@ import axios from 'axios';
 
 const BookInfo = ({ author, title, link }) => (
     <View style={styles.item}>
-        <Text style={styles.title}>{'Autor : ' + author}</Text>
-        <Text style={styles.title}>{'T\u00edtulo : ' + title}</Text>
+        <Text style={styles.title}>{`T\u00edtulo: ${title}`}</Text>
+        <Text style={styles.title}>{`Autor: ${author}`}</Text>
         <Text style={{ color: 'blue' }} onPress={() => Linking.openURL(link)}>
             Link
         </Text>
@@ -16,7 +16,7 @@ const BookInfo = ({ author, title, link }) => (
 );
 
 const renderItem = ({ item }) => <BookInfo author={item.author} title={item.title} link={item.link} />;
-const styles     = StyleSheet.create({
+const styles = StyleSheet.create({
     container: {
         flex: 1,
         marginTop: StatusBar.currentHeight || 0,
@@ -39,19 +39,19 @@ const styles     = StyleSheet.create({
 
 // eslint-disable-next-line no-unused-vars
 function BookScreen(props) {
-    const URL = 'http://51.15.192.116:3030/api/v1/books/';
+    const URL = 'http://51.15.192.116:3030/api/v1/books';
     const [data, setData] = useState([]);
     const loadData = useCallback(() => {
-    axios
-        .get(URL)
-        .then(response => {
-        const books = response.data;
-        setData(books);
-        })
-        .catch(error => {
-        console.error('The error: ', error);
-        })
-        .finally(() => setLoading(false));
+        axios
+            .get(URL)
+            .then(response => {
+                const books = response.data;
+
+                setData(books);
+            })
+            .catch(error => {
+                console.error('The error: ', error);
+            });
     }, []);
 
     useEffect(() => loadData(), [loadData]);
