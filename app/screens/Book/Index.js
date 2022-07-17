@@ -4,7 +4,6 @@ import { SafeAreaView, View, FlatList, StyleSheet, Text, StatusBar, Linking } fr
 import Header from '../../components/Header';
 import Separator from '../../components/Separator';
 import axios from 'axios';
-// import BOOKS from '../../assets/Data/books';
 
 const BookInfo = ({ author, title, link }) => (
     <View style={styles.item}>
