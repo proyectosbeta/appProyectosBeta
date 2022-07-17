@@ -1,21 +1,22 @@
 /* eslint-disable react/jsx-filename-extension */
-import * as React from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import { SafeAreaView, View, FlatList, StyleSheet, Text, StatusBar, Linking } from 'react-native';
 import Header from '../../components/Header';
 import Separator from '../../components/Separator';
-import BOOKS from '../../assets/Data/books';
+import axios from 'axios';
+// import BOOKS from '../../assets/Data/books';
 
-const BookInfo = ({ name, book, link }) => (
+const BookInfo = ({ author, title, link }) => (
     <View style={styles.item}>
-        <Text style={styles.title}>{'Autor : ' + name}</Text>
-        <Text style={styles.title}>{'T\u00edtulo : ' + book}</Text>
+        <Text style={styles.title}>{'Autor : ' + author}</Text>
+        <Text style={styles.title}>{'T\u00edtulo : ' + title}</Text>
         <Text style={{ color: 'blue' }} onPress={() => Linking.openURL(link)}>
             Link
         </Text>
     </View>
 );
 
-const renderItem = ({ item }) => <BookInfo name={item.name} book={item.book} link={item.link} />;
+const renderItem = ({ item }) => <BookInfo author={item.author} title={item.title} link={item.link} />;
 const styles     = StyleSheet.create({
     container: {
         flex: 1,
@@ -39,12 +40,29 @@ const styles     = StyleSheet.create({
 
 // eslint-disable-next-line no-unused-vars
 function BookScreen(props) {
+    const URL = 'http://51.15.192.116:3030/api/v1/books/';
+    const [data, setData] = useState([]);
+    const loadData = useCallback(() => {
+    axios
+        .get(URL)
+        .then(response => {
+        const books = response.data;
+        setData(books);
+        })
+        .catch(error => {
+        console.error('The error: ', error);
+        })
+        .finally(() => setLoading(false));
+    }, []);
+
+    useEffect(() => loadData(), [loadData]);
+
     return (
         <SafeAreaView style={styles.container}>
             <FlatList
-                data={BOOKS}
+                data={data}
                 renderItem={renderItem}
-                keyExtractor={(item) => item.id}
+                keyExtractor={(item) => item._id}
                 ItemSeparatorComponent={Separator}
                 ListHeaderComponent={Header}
             />
