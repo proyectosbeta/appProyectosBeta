@@ -5,17 +5,18 @@ import Header from '../../components/Header';
 import Separator from '../../components/Separator';
 import axios from 'axios';
 
-const BookInfo = ({ author, title, link }) => (
+const BookInfo = ({ author, title, year, link }) => (
     <View style={styles.item}>
         <Text style={styles.title}>{`T\u00edtulo: ${title}`}</Text>
         <Text style={styles.title}>{`Autor: ${author}`}</Text>
+        <Text style={styles.title}>{`Año: ${year}`}</Text>
         <Text style={{ color: 'blue' }} onPress={() => Linking.openURL(link)}>
             Link
         </Text>
     </View>
 );
 
-const renderItem = ({ item }) => <BookInfo author={item.author} title={item.title} link={item.link} />;
+const renderItem = ({ item }) => <BookInfo author={item.author} title={item.title} year={item.year} link={item.link} />;
 const styles = StyleSheet.create({
     container: {
         flex: 1,
