@@ -8,6 +8,7 @@
 - [fix] Fix for the books api to work for android 11 and 12 devices.
 - [fix] Translate words.
 - [refactor] RootNavigation.
+- [feat] Add translate book screen.
 
 #v0.3.1
 

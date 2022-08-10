@@ -2,18 +2,24 @@
 import React, { useState, useEffect, useCallback } from 'react';
 import { SafeAreaView, View, FlatList, StyleSheet, Text, StatusBar, Linking } from 'react-native';
 import axios from 'axios';
+import { useTranslation } from 'react-i18next';
+
 import Header from '../../components/Header';
 import Separator from '../../components/Separator';
 
 function BookInfo({ author, title, year, link }) {
-  return <View style={styles.item}>
-        <Text style={styles.title}>{`T\u00edtulo: ${title}`}</Text>
-        <Text style={styles.title}>{`Autor: ${author}`}</Text>
-        <Text style={styles.title}>{`Año: ${year}`}</Text>
-        <Text style={{ color: 'blue' }} onPress={() => Linking.openURL(link)}>
-            Link
-        </Text>
-    </View>
+    const { t } = useTranslation();
+
+    return (
+        <View style={styles.item}>
+            <Text style={styles.title}>{`${t('common:book:title')}: ${title}`}</Text>
+            <Text style={styles.title}>{`${t('common:book:author')}: ${author}`}</Text>
+            <Text style={styles.title}>{`${t('common:book:year')}: ${year}`}</Text>
+            <Text style={{ color: 'blue' }} onPress={() => Linking.openURL(link)}>
+                {t('common:book:link')}
+            </Text>
+        </View>
+    );
 }
 
 const renderItem = ({ item }) => (
@@ -49,8 +55,8 @@ function BookScreen(props) {
             .get(URL)
             .then((response) => {
                 const dataResponse = response.data;
-                const {status} = dataResponse;
-                const {data} = dataResponse;
+                const { status } = dataResponse;
+                const { data } = dataResponse;
 
                 status ? setData(data) : setData(null);
             })

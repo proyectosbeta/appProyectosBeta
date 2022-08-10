@@ -1,4 +1,9 @@
 export default {
-  hello: 'Hola',
-  languageSelector: 'Elige tu idioma',
+    languageSelector: 'Elige tu idioma',
+    book: {
+        title: 'Título',
+        author: 'Autor',
+        year: 'Año',
+        link: 'Link',
+    },
 };
