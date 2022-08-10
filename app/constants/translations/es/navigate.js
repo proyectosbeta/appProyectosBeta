@@ -3,9 +3,9 @@ export default {
         title: 'Inicio',
     },
     book: {
-        title: 'Libro',
+        title: 'Libros',
     },
     setting: {
-        title: 'Configuración',
+        title: 'Configuraciones',
     },
 };
