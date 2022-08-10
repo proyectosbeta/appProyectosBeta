@@ -1,6 +1,7 @@
 #v0.4.0
 
 - [feat] Add language screen.
+- [fix] Book screen.
 
 #v0.3.1
 

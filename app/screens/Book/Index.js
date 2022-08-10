@@ -16,7 +16,9 @@ const BookInfo = ({ author, title, year, link }) => (
     </View>
 );
 
-const renderItem = ({ item }) => <BookInfo author={item.author} title={item.title} year={item.year} link={item.link} />;
+const renderItem = ({ item }) => (
+    <BookInfo author={item.author} title={item.title} year={item.year} link={item.link} />
+);
 const styles = StyleSheet.create({
     container: {
         flex: 1,
@@ -45,12 +47,14 @@ function BookScreen(props) {
     const loadData = useCallback(() => {
         axios
             .get(URL)
-            .then(response => {
-                const books = response.data;
+            .then((response) => {
+                const dataResponse = response.data;
+                const status = dataResponse.status;
+                const data = dataResponse.data;
 
-                setData(books);
+                status ? setData(data) : setData(null);
             })
-            .catch(error => {
+            .catch((error) => {
                 console.error('The error: ', error);
             });
     }, []);
