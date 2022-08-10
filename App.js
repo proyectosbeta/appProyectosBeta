@@ -54,7 +54,7 @@ const App: () => Node = () => {
                     options={{
                         tabBarLabel: t('navigate:setting:title'),
                         tabBarIcon: ({ color, size }) => (
-                            <Icon name="setting" color={color} size={size} />
+                            <Icon name="settings" color={color} size={size} />
                         ),
                     }}
                 />

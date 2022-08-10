@@ -2,6 +2,7 @@
 
 - [feat] Add language screen.
 - [fix] Book screen.
+- [fix] Setting screen.
 
 #v0.3.1
 

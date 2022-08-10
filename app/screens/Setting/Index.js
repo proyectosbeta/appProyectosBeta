@@ -4,7 +4,7 @@ import { View } from 'react-native';
 
 import Selector from '../../components/LanguageSelector';
 
-const settingScreen = () => {
+const SettingScreen = () => {
     return (
         <View style={{ flex: 1, backgroundColor: '#fff' }}>
             <Selector />
@@ -12,4 +12,4 @@ const settingScreen = () => {
     );
 };
 
-export default settingScreen;
+export default SettingScreen;
