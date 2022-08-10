@@ -1,6 +1,7 @@
 #v0.3.1
 
 - [build] Update package json file.
+- [fix] Inavigation icons.
 
 #v0.3.0
 
