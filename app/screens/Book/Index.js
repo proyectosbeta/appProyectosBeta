@@ -1,20 +1,22 @@
 /* eslint-disable react/jsx-filename-extension */
 import React, { useState, useEffect, useCallback } from 'react';
 import { SafeAreaView, View, FlatList, StyleSheet, Text, StatusBar, Linking } from 'react-native';
+import axios from 'axios';
 import Header from '../../components/Header';
 import Separator from '../../components/Separator';
-import axios from 'axios';
 
-const BookInfo = ({ author, title, year, link }) => (
-    <View style={styles.item}>
-        <Text style={styles.title}>{`T\u00edtulo: ${title}`}</Text>
-        <Text style={styles.title}>{`Autor: ${author}`}</Text>
-        <Text style={styles.title}>{`Año: ${year}`}</Text>
-        <Text style={{ color: 'blue' }} onPress={() => Linking.openURL(link)}>
-            Link
-        </Text>
-    </View>
-);
+function BookInfo({ author, title, year, link }) {
+    return (
+        <View style={styles.item}>
+            <Text style={styles.title}>{`T\u00edtulo: ${title}`}</Text>
+            <Text style={styles.title}>{`Autor: ${author}`}</Text>
+            <Text style={styles.title}>{`Año: ${year}`}</Text>
+            <Text style={{ color: 'blue' }} onPress={() => Linking.openURL(link)}>
+                Link
+            </Text>
+        </View>
+    );
+}
 
 const renderItem = ({ item }) => (
     <BookInfo author={item.author} title={item.title} year={item.year} link={item.link} />
@@ -49,10 +51,9 @@ function BookScreen(props) {
             .get(URL)
             .then((response) => {
                 const dataResponse = response.data;
-                const status = dataResponse.status;
-                const data = dataResponse.data;
+                const { status, books } = dataResponse;
 
-                status ? setData(data) : setData(null);
+                status ? setData(books) : setData(null);
             })
             .catch((error) => {
                 console.error('The error: ', error);
