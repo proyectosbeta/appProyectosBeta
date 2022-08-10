@@ -7,6 +7,7 @@
 - [feat] Add icons for android.
 - [fix] Fix for the books api to work for android 11 and 12 devices.
 - [fix] Translate words.
+- [refactor] RootNavigation.
 
 #v0.3.1
 
