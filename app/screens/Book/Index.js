@@ -6,16 +6,14 @@ import Header from '../../components/Header';
 import Separator from '../../components/Separator';
 
 function BookInfo({ author, title, year, link }) {
-    return (
-        <View style={styles.item}>
-            <Text style={styles.title}>{`T\u00edtulo: ${title}`}</Text>
-            <Text style={styles.title}>{`Autor: ${author}`}</Text>
-            <Text style={styles.title}>{`Año: ${year}`}</Text>
-            <Text style={{ color: 'blue' }} onPress={() => Linking.openURL(link)}>
-                Link
-            </Text>
-        </View>
-    );
+  return <View style={styles.item}>
+        <Text style={styles.title}>{`T\u00edtulo: ${title}`}</Text>
+        <Text style={styles.title}>{`Autor: ${author}`}</Text>
+        <Text style={styles.title}>{`Año: ${year}`}</Text>
+        <Text style={{ color: 'blue' }} onPress={() => Linking.openURL(link)}>
+            Link
+        </Text>
+    </View>
 }
 
 const renderItem = ({ item }) => (
@@ -51,9 +49,10 @@ function BookScreen(props) {
             .get(URL)
             .then((response) => {
                 const dataResponse = response.data;
-                const { status, books } = dataResponse;
+                const {status} = dataResponse;
+                const {data} = dataResponse;
 
-                status ? setData(books) : setData(null);
+                status ? setData(data) : setData(null);
             })
             .catch((error) => {
                 console.error('The error: ', error);
