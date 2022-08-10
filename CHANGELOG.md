@@ -4,6 +4,7 @@
 - [fix] Book screen.
 - [fix] Setting screen.
 - [refactor] Book screen.
+- [feat] Add icons for android.
 
 #v0.3.1
 
