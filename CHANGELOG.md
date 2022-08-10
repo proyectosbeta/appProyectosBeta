@@ -8,7 +8,7 @@
 #v0.3.1
 
 - [build] Update package json file.
-- [fix] Inavigation icons.
+- [fix] Navigation icons.
 - [docs] Update readme file.
 
 #v0.3.0
