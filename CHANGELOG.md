@@ -1,7 +1,12 @@
+#v0.4.0
+
+- [feat] Add language screen.
+
 #v0.3.1
 
 - [build] Update package json file.
 - [fix] Inavigation icons.
+- [docs] Update readme file.
 
 #v0.3.0
 
