@@ -1,3 +1,7 @@
+#v0.3.1
+
+- [build] Update package json file.
+
 #v0.3.0
 
 - [feat] Consume the books endpoint.
