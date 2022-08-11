@@ -47,7 +47,7 @@ const styles = StyleSheet.create({
 });
 
 // eslint-disable-next-line no-unused-vars
-function BookScreen(props) {
+const BookScreen = (props) => {
     const URL = 'http://51.15.192.116:3030/api/v1/books';
     const [data, setData] = useState([]);
     const loadData = useCallback(() => {
@@ -78,6 +78,6 @@ function BookScreen(props) {
             />
         </SafeAreaView>
     );
-}
+};
 
 export default BookScreen;

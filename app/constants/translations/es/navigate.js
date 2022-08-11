@@ -5,6 +5,9 @@ export default {
     book: {
         title: 'Libros',
     },
+    tip: {
+        title: 'Tips',
+    },
     setting: {
         title: 'Configuraciones',
     },

@@ -9,6 +9,7 @@
 - [fix] Translate words.
 - [refactor] RootNavigation.
 - [feat] Add translate book screen.
+- [feat] Add menu.
 
 #v0.3.1
 
