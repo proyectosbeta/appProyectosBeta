@@ -47,4 +47,4 @@ const SettingStackNavigator = () => {
     );
 };
 
-export default { MainStackNavigator, TipStackNavigator, BookStackNavigator, SettingStackNavigator };
+export { MainStackNavigator, TipStackNavigator, BookStackNavigator, SettingStackNavigator };
