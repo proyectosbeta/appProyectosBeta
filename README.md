@@ -19,7 +19,7 @@ The app for Proyectos Beta (proyectosbeta.net)
 One terminal:
 
 ```bash
-npm install
+npm install --legacy-peer-deps
 npx react-native start --reset-cache
 ```
 

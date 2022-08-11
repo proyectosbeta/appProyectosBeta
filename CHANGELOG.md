@@ -10,6 +10,7 @@
 - [refactor] RootNavigation.
 - [feat] Add translate book screen.
 - [feat] Add menu.
+- [docs] Update readme file.
 
 #v0.3.1
 
