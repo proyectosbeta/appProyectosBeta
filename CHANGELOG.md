@@ -11,6 +11,7 @@
 - [feat] Add translate book screen.
 - [feat] Add menu.
 - [docs] Update readme file.
+- [fix] Fix error StackNavigator.
 
 #v0.3.1
 
