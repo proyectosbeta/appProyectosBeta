@@ -1,7 +1,8 @@
 // ./navigation/TabNavigator.js
 import React from 'react';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import { Icon } from 'react-native-elements';
+// import { Icon } from 'react-native-elements';
+import Icon from 'react-native-vector-icons/dist/Ionicons';
 import { useTranslation } from 'react-i18next';
 
 import {
@@ -9,6 +10,7 @@ import {
     TipStackNavigator,
     BookStackNavigator,
     SettingStackNavigator,
+    AboutStackNavigator,
 } from './StackNavigator';
 
 const Tab = createBottomTabNavigator();
@@ -41,7 +43,7 @@ const BottomTabNavigator = () => {
                 component={BookStackNavigator}
                 options={{
                     tabBarLabel: t('navigate:book'),
-                    tabBarIcon: ({ color, size }) => <Icon name="book" color={color} size={size} />,
+                    tabBarIcon: ({ color, size }) => <Icon name="md-book" color={color} size={size} />,
                 }}
             />
             <Tab.Screen
@@ -50,7 +52,17 @@ const BottomTabNavigator = () => {
                 options={{
                     tabBarLabel: t('navigate:setting'),
                     tabBarIcon: ({ color, size }) => (
-                        <Icon name="topic" color={color} size={size} />
+                        <Icon name="md-settings" color={color} size={size} />
+                    ),
+                }}
+            />
+            <Tab.Screen
+                name="About"
+                component={AboutStackNavigator}
+                options={{
+                    tabBarLabel: t('navigate:about'),
+                    tabBarIcon: ({ color, size }) => (
+                        <Icon name="md-information" color={color} size={size} />
                     ),
                 }}
             />

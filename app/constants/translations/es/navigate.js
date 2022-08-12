@@ -3,4 +3,5 @@ export default {
     book: 'Libros',
     tip: 'Tips',
     setting: 'Configuraciones',
+    about: 'Acerca de',
 };

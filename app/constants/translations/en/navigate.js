@@ -3,4 +3,5 @@ export default {
     book: 'Books',
     tip: 'Tips',
     setting: 'Settings',
+    about: 'About',
 };

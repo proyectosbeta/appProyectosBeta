@@ -14,6 +14,7 @@
 - [fix] Fix error StackNavigator.
 - [refactor] Navigator translation.
 - [style] Improve home screen.
+- [feat] Add about screen.
 
 #v0.3.1
 

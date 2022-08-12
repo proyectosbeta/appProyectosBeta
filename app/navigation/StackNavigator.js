@@ -14,7 +14,7 @@ const MainStackNavigator = () => {
     return (
         <Stack.Navigator screenOptions={{ headerShown: false }}>
             <Stack.Screen name="Home1" component={HomeScreen} />
-            <Stack.Screen name="About" component={AboutScreen} />
+            {/* <Stack.Screen name="About" component={AboutScreen} /> */}
         </Stack.Navigator>
     );
 };
@@ -47,4 +47,18 @@ const SettingStackNavigator = () => {
     );
 };
 
-export { MainStackNavigator, TipStackNavigator, BookStackNavigator, SettingStackNavigator };
+const AboutStackNavigator = () => {
+    return (
+        <Stack.Navigator screenOptions={screenOptionStyle}>
+            <Stack.Screen name="About1" component={AboutScreen} />
+        </Stack.Navigator>
+    );
+};
+
+export {
+    MainStackNavigator,
+    TipStackNavigator,
+    BookStackNavigator,
+    SettingStackNavigator,
+    AboutStackNavigator,
+};
