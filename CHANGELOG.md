@@ -1,3 +1,7 @@
+#v0.5.0
+
+- [build] Upgrade to React Native 0.69.4 with React 18.2.0.
+
 #v0.4.0
 
 - [feat] Add language screen.
