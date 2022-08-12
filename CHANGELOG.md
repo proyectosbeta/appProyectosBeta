@@ -12,6 +12,7 @@
 - [feat] Add menu.
 - [docs] Update readme file.
 - [fix] Fix error StackNavigator.
+- [refactor] Navigator translation.
 
 #v0.3.1
 

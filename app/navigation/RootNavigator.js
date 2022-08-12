@@ -27,7 +27,7 @@ export default function RootNavigator() {
                     name="Home"
                     component={HomeScreen}
                     options={{
-                        tabBarLabel: t('navigate:home:title'),
+                        tabBarLabel: t('navigate:home'),
                         tabBarIcon: ({ color, size }) => (
                             <Icon name="home" color={color} size={size} />
                         ),
@@ -37,7 +37,7 @@ export default function RootNavigator() {
                     name="Book"
                     component={BookScreen}
                     options={{
-                        tabBarLabel: t('navigate:book:title'),
+                        tabBarLabel: t('navigate:book'),
                         tabBarIcon: ({ color, size }) => (
                             <Icon name="book" color={color} size={size} />
                         ),
@@ -47,7 +47,7 @@ export default function RootNavigator() {
                     name="Setting"
                     component={SettingScreen}
                     options={{
-                        tabBarLabel: t('navigate:setting:title'),
+                        tabBarLabel: t('navigate:setting'),
                         tabBarIcon: ({ color, size }) => (
                             <Icon name="settings" color={color} size={size} />
                         ),

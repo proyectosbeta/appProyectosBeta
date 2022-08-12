@@ -22,7 +22,7 @@ const BottomTabNavigator = () => {
                 name="Home"
                 component={MainStackNavigator}
                 options={{
-                    tabBarLabel: t('navigate:home:title'),
+                    tabBarLabel: t('navigate:home'),
                     tabBarIcon: ({ color, size }) => <Icon name="home" color={color} size={size} />,
                 }}
             />
@@ -30,7 +30,7 @@ const BottomTabNavigator = () => {
                 name="Tip"
                 component={TipStackNavigator}
                 options={{
-                    tabBarLabel: t('navigate:tip:title'),
+                    tabBarLabel: t('navigate:tip'),
                     tabBarIcon: ({ color, size }) => (
                         <Icon name="topic" color={color} size={size} />
                     ),
@@ -40,7 +40,7 @@ const BottomTabNavigator = () => {
                 name="Book"
                 component={BookStackNavigator}
                 options={{
-                    tabBarLabel: t('navigate:book:title'),
+                    tabBarLabel: t('navigate:book'),
                     tabBarIcon: ({ color, size }) => <Icon name="book" color={color} size={size} />,
                 }}
             />
@@ -48,7 +48,7 @@ const BottomTabNavigator = () => {
                 name="Setting"
                 component={SettingStackNavigator}
                 options={{
-                    tabBarLabel: t('navigate:setting:title'),
+                    tabBarLabel: t('navigate:setting'),
                     tabBarIcon: ({ color, size }) => (
                         <Icon name="topic" color={color} size={size} />
                     ),

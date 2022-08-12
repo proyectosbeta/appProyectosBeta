@@ -121,7 +121,7 @@ const Menu = (props) => {
                                         style={{ alignItems: 'center', justifyContent: 'center' }}
                                     >
                                         <Text style={[styles.title, { color: item.color }]}>
-                                            {t(`navigate:${item.title}:title`)}
+                                            {t(`navigate:${item.title}`)}
                                         </Text>
                                     </View>
                                 </View>
