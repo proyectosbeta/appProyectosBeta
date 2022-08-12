@@ -15,7 +15,7 @@ import menu from './DataMenu';
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        marginTop: 10,
+        // marginTop: 10,
         backgroundColor: '#fff',
     },
     list: {
@@ -25,8 +25,6 @@ const styles = StyleSheet.create({
     listContainer: {
         alignItems: 'center',
     },
-
-    /******** card **************/
     card: {
         shadowColor: '#474747',
         shadowOffset: {
@@ -46,26 +44,11 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
     },
     cardHeader: {
-        paddingVertical: 17,
-        paddingHorizontal: 16,
         borderTopLeftRadius: 1,
         borderTopRightRadius: 1,
         flexDirection: 'row',
         alignItems: 'center',
         justifyContent: 'center',
-    },
-    cardContent: {
-        paddingVertical: 12.5,
-        paddingHorizontal: 16,
-    },
-    cardFooter: {
-        flexDirection: 'row',
-        justifyContent: 'space-between',
-        paddingTop: 12.5,
-        paddingBottom: 25,
-        paddingHorizontal: 16,
-        borderBottomLeftRadius: 1,
-        borderBottomRightRadius: 1,
     },
     cardImage: {
         height: 50,
@@ -77,13 +60,12 @@ const styles = StyleSheet.create({
         flex: 1,
         alignSelf: 'center',
         fontWeight: 'bold',
+        marginTop: -16,
     },
 });
 
 const clickEventListener = (navigation, item) => {
     const screen = item.screen;
-
-    // console.log(navigation);
 
     navigation.navigate(screen);
 };
@@ -120,7 +102,7 @@ const Menu = (props) => {
                                     <View
                                         style={{ alignItems: 'center', justifyContent: 'center' }}
                                     >
-                                        <Text style={[styles.title, { color: item.color }]}>
+                                        <Text style={[styles.title]}>
                                             {t(`navigate:${item.title}`)}
                                         </Text>
                                     </View>

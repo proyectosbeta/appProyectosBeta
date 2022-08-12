@@ -13,6 +13,7 @@
 - [docs] Update readme file.
 - [fix] Fix error StackNavigator.
 - [refactor] Navigator translation.
+- [style] Improve home screen.
 
 #v0.3.1
 
