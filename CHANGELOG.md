@@ -15,6 +15,7 @@
 - [refactor] Navigator translation.
 - [style] Improve home screen.
 - [feat] Add about screen.
+- [build] Update package json file.
 
 #v0.3.1
 

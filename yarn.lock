@@ -1121,10 +1121,10 @@
     "@jridgewell/resolve-uri" "^3.0.3"
     "@jridgewell/sourcemap-codec" "^1.4.10"
 
-"@react-native-async-storage/async-storage@1.17.8":
-  "integrity" "sha512-GoM/11oiSQrTcb6OycIPc6yv9HdWO12WbjsZX82v0xkAwefxJ0nPEHPhaeJiUnoOlCxj44+KoEPzlHG0Y8eRhA=="
-  "resolved" "https://registry.npmjs.org/@react-native-async-storage/async-storage/-/async-storage-1.17.8.tgz"
-  "version" "1.17.8"
+"@react-native-async-storage/async-storage@1.17.9":
+  "integrity" "sha512-HKhMvjpA5/YzNMkcY3qeWLdTtUrtJe243knHNNYe1c0IplX69hZyiw7DjFwAgxPG9+YvzHDHliqPV+mBNOv+cQ=="
+  "resolved" "https://registry.npmjs.org/@react-native-async-storage/async-storage/-/async-storage-1.17.9.tgz"
+  "version" "1.17.9"
   dependencies:
     "merge-options" "^3.0.4"
 
@@ -5791,10 +5791,10 @@
     "prop-types" "^15.7.2"
     "yargs" "^16.1.1"
 
-"react-native@0.68.2":
-  "integrity" "sha512-qNMz+mdIirCEmlrhapAtAG+SWVx6MAiSfCbFNhfHqiqu1xw1OKXdzIrjaBEPihRC2pcORCoCHduHGQe/Pz9Yuw=="
-  "resolved" "https://registry.npmjs.org/react-native/-/react-native-0.68.2.tgz"
-  "version" "0.68.2"
+"react-native@0.68.3":
+  "integrity" "sha512-LPgLQ4e96NWCrJPKlXzKfvlg1ddhfUplsEg00/cfBIMFZPJn2inzo9Rym8I/JYjmRORe4GjGY8kOem72hPm0Lw=="
+  "resolved" "https://registry.npmjs.org/react-native/-/react-native-0.68.3.tgz"
+  "version" "0.68.3"
   dependencies:
     "@jest/create-cache-key-function" "^27.0.1"
     "@react-native-community/cli" "^7.0.3"
