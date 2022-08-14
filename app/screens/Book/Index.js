@@ -55,10 +55,10 @@ const BookScreen = (props) => {
             .get(URL)
             .then((response) => {
                 const dataResponse = response.data;
-                const { status } = dataResponse;
+                const { success } = dataResponse;
                 const { data } = dataResponse;
 
-                status ? setData(data) : setData(null);
+                success ? setData(data) : setData(null);
             })
             .catch((error) => {
                 console.error('The error: ', error);

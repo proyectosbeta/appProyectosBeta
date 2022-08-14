@@ -1,5 +1,10 @@
 # Release Notes
 
+## v0.5.1
+
+- [build] Update package json file.
+- [fix] Fixed when consuming the books api endpoint.
+
 ## v0.5.0
 
 - [build] Upgrade to React Native 0.69.4 with React 18.2.0.
