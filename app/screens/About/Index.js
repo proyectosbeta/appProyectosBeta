@@ -12,6 +12,7 @@ const styles = StyleSheet.create({
         paddingTop: 25,
         paddingLeft: 15,
         fontSize: 15,
+        color: 'black',
     },
     footer: {
         fontSize: 12,
@@ -19,6 +20,7 @@ const styles = StyleSheet.create({
         alignSelf: 'center',
         fontWeight: 'bold',
         marginTop: 16,
+        color: 'black',
     },
 });
 

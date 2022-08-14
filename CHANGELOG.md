@@ -1,5 +1,9 @@
 # Release Notes
 
+## v0.5.2
+
+- [style] Changed the color of the about screen text.
+
 ## v0.5.1
 
 - [build] Update package json file.
