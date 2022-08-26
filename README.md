@@ -5,7 +5,7 @@ The app for Proyectos Beta (proyectosbeta.net)
 # Tecnologies
 
 - React 18.2.0
-- React native 0.69.4
+- React native 0.69.5
 - NodeJS v14.20.0
 - NPM 8.16.0
 - OpenJDK 17.0.4
