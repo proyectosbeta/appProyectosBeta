@@ -4,6 +4,7 @@ import { SafeAreaView, View, FlatList, StyleSheet, Text, StatusBar, Linking } fr
 import axios from 'axios';
 import { useTranslation } from 'react-i18next';
 
+import { URL_API_BOOKS } from '@env';
 import Header from '../../components/Header';
 import Separator from '../../components/Separator';
 
@@ -48,7 +49,7 @@ const styles = StyleSheet.create({
 
 // eslint-disable-next-line no-unused-vars
 const BookScreen = (props) => {
-    const URL = 'http://51.15.192.116:3030/api/v1/books';
+    const URL = `${URL_API_BOOKS}/api/v1/books`;
     const [data, setData] = useState([]);
     const loadData = useCallback(() => {
         axios

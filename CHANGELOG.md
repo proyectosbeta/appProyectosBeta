@@ -3,6 +3,7 @@
 ## v0.6.0
 
 - [build] Update package json file.
+- [feat] Add env.
 
 ## v0.5.2
 
