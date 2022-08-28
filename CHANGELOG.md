@@ -3,6 +3,7 @@
 ## v0.6.0
 
 - [build] Update package json file.
+- [fix] Change end point for the books.
 - [feat] Add env.
 
 ## v0.5.2
