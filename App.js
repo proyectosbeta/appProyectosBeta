@@ -4,7 +4,7 @@ import { NavigationContainer } from '@react-navigation/native';
 
 console.reportErrorsAsExceptions = false;
 import './app/constants/IMLocalize';
-import BottomTabNavigator from "./app/navigation/TabNavigator";
+import BottomTabNavigator from './app/navigation/TabNavigator';
 
 const App: () => Node = () => {
     useEffect(() => {

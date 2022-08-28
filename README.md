@@ -4,15 +4,15 @@ The app for Proyectos Beta (proyectosbeta.net)
 
 # Tecnologies
 
-- React 18.2.0
-- React native 0.69.5
-- NodeJS v14.20.0
-- NPM 8.16.0
-- OpenJDK 17.0.4
-- Gradle 7.3.3
-- Emulator Android Pixel_XL_API_29(AVD)
-- Docker 20.10.17
-- Sonarqube 9.5.XX
+-   React 18.2.0
+-   React native 0.69.5
+-   NodeJS v14.20.0
+-   NPM 8.16.0
+-   OpenJDK 17.0.4
+-   Gradle 7.3.3
+-   Emulator Android Pixel_XL_API_29(AVD)
+-   Docker 20.10.17
+-   Sonarqube 9.5.XX
 
 # Development
 
@@ -62,7 +62,7 @@ npx react-native run-android --variant=release
 
 The apk is in android/app/build/outputs/apk/release/
 
-## Quality code 
+## Quality code
 
 ### Sonarqube
 

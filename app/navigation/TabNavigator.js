@@ -43,7 +43,9 @@ const BottomTabNavigator = () => {
                 component={BookStackNavigator}
                 options={{
                     tabBarLabel: t('navigate:book'),
-                    tabBarIcon: ({ color, size }) => <Icon name="md-book" color={color} size={size} />,
+                    tabBarIcon: ({ color, size }) => (
+                        <Icon name="md-book" color={color} size={size} />
+                    ),
                 }}
             />
             <Tab.Screen
