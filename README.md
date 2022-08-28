@@ -28,7 +28,7 @@ Change env variables
 URL_API_BOOKS = "https://books.proyectosbeta.net"
 ```
 
-## Install
+## Installation
 
 One terminal:
 
