@@ -16,6 +16,20 @@ The app for Proyectos Beta (proyectosbeta.net)
 
 # Development
 
+## Configuration en
+
+```bash
+cp .env.example .env
+```
+
+Change env variables
+
+```
+URL_API_BOOKS = "https://books.proyectosbeta.net"
+```
+
+## Install
+
 One terminal:
 
 ```bash
