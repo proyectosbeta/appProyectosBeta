@@ -3,6 +3,7 @@
 ## v0.6.1
 
 -   [fix] Format in the code.
+-   [build] Update package json file.
 
 ## v0.6.0
 
