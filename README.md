@@ -5,11 +5,11 @@ The app for Proyectos Beta (proyectosbeta.net)
 # Tecnologies
 
 -   React 18.2.0
--   React native 0.69.5
+-   React native 0.70.0
 -   NodeJS v14.20.0
 -   NPM 8.18.0
 -   OpenJDK 17.0.4
--   Gradle 7.3.3
+-   Gradle 7.5.1
 -   Emulator Android Pixel_XL_API_29(AVD)
 -   Docker 20.10.17
 -   Sonarqube 9.5.XX

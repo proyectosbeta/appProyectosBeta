@@ -1,5 +1,9 @@
 # Release Notes
 
+## v0.7.0
+
+-   [build] React native 0.65.0 to 0.70.0
+
 ## v0.6.1
 
 -   [fix] Format in the code.
