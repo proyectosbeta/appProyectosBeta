@@ -2,7 +2,7 @@
 
 ## v0.7.0
 
--   [build] React native 0.65.0 to 0.70.0
+-   [build] React native 0.69.5 to 0.70.0
 -   [fix] Format in the code.
 -   [build] Update package json file.
 
