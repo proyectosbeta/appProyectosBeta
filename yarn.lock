@@ -5787,10 +5787,10 @@
   "resolved" "https://registry.npmjs.org/react-is/-/react-is-18.2.0.tgz"
   "version" "18.2.0"
 
-"react-native-codegen@^0.70.4":
-  "integrity" "sha512-bPyd5jm840omfx24VRyMP+KPzAefpRDwE18w5ywMWHCWZBSqLn1qI9WgBPnavlIrjTEuzxznWQNcaA26lw8AMQ=="
-  "resolved" "https://registry.npmjs.org/react-native-codegen/-/react-native-codegen-0.70.4.tgz"
-  "version" "0.70.4"
+"react-native-codegen@^0.70.5":
+  "integrity" "sha512-vXqgCWWIWlzsCtwD6hbmwmCleGNJYm+n4xO9VMfzzlF3xt9gjC7/USSMTf/YZlCK/hDwQU412QrNS6A9OH+mag=="
+  "resolved" "https://registry.npmjs.org/react-native-codegen/-/react-native-codegen-0.70.5.tgz"
+  "version" "0.70.5"
   dependencies:
     "@babel/parser" "^7.14.0"
     "flow-parser" "^0.121.0"
@@ -5829,10 +5829,10 @@
     "lodash" "^4.17.21"
     "prop-types" "^15.7.2"
 
-"react-native-gradle-plugin@^0.70.2":
-  "integrity" "sha512-k7d+CVh0fs/VntA2WaKD58cFB2rtiSLBHYlciH18ncaT4N/B3A4qOGv9pSCEHfQikELm6vAf98KMbE3c8KnH1A=="
-  "resolved" "https://registry.npmjs.org/react-native-gradle-plugin/-/react-native-gradle-plugin-0.70.2.tgz"
-  "version" "0.70.2"
+"react-native-gradle-plugin@^0.70.3":
+  "integrity" "sha512-oOanj84fJEXUg9FoEAQomA8ISG+DVIrTZ3qF7m69VQUJyOGYyDZmPqKcjvRku4KXlEH6hWO9i4ACLzNBh8gC0A=="
+  "resolved" "https://registry.npmjs.org/react-native-gradle-plugin/-/react-native-gradle-plugin-0.70.3.tgz"
+  "version" "0.70.3"
 
 "react-native-localize@2.2.3":
   "integrity" "sha512-DoEEk7s4p0BnCU2zS2yzC+bEUWSFhcuXoLidgHag1EQkaXJLiNos661h8nGZvWWrVK6zE+Cl2319bqG3FidkJQ=="
@@ -5890,10 +5890,10 @@
     "prop-types" "^15.7.2"
     "yargs" "^16.1.1"
 
-"react-native@0.70.0":
-  "integrity" "sha512-QjXLbrK9f+/B2eCzn6kAvglLV/8nwPuFGaFv7ggPpAzFRyx5bVN1dwQLHL3MrP7iXR/M7Jc6Nnid7tmRSic6vA=="
-  "resolved" "https://registry.npmjs.org/react-native/-/react-native-0.70.0.tgz"
-  "version" "0.70.0"
+"react-native@0.70.1":
+  "integrity" "sha512-AUh4NZLFdvyjSiYWCtTROCrC7loxeeZ/TzBnkZwp3kb9XmMu7/kzvWn2c5sEMnzW7X/0JSul8jXexGVdpnCoSA=="
+  "resolved" "https://registry.npmjs.org/react-native/-/react-native-0.70.1.tgz"
+  "version" "0.70.1"
   dependencies:
     "@jest/create-cache-key-function" "^27.0.1"
     "@react-native-community/cli" "^9.0.0"
@@ -5917,8 +5917,8 @@
     "pretty-format" "^26.5.2"
     "promise" "^8.0.3"
     "react-devtools-core" "4.24.0"
-    "react-native-codegen" "^0.70.4"
-    "react-native-gradle-plugin" "^0.70.2"
+    "react-native-codegen" "^0.70.5"
+    "react-native-gradle-plugin" "^0.70.3"
     "react-refresh" "^0.4.0"
     "react-shallow-renderer" "^16.15.0"
     "regenerator-runtime" "^0.13.2"
