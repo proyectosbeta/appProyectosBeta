@@ -1,8 +1,10 @@
 # Release Notes
 
-## v0.7.1
+## v0.8.0
 
 -   [build] Update package json file.
+-   [feat] Dark mode, when using the operating system preferences.
+-   [refactor] Refactoring code.
 
 ## v0.7.0
 

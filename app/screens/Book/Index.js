@@ -1,10 +1,11 @@
 /* eslint-disable react/jsx-filename-extension */
 import React, { useState, useEffect, useCallback } from 'react';
-import { SafeAreaView, View, FlatList, StyleSheet, Text, StatusBar, Linking } from 'react-native';
+import { SafeAreaView, View, FlatList, Text, Linking } from 'react-native';
 import axios from 'axios';
 import { useTranslation } from 'react-i18next';
 
 import { URL_API_BOOKS } from '@env';
+import styles from './Styles';
 import Header from '../../components/Header';
 import Separator from '../../components/Separator';
 
@@ -26,26 +27,6 @@ function BookInfo({ author, title, year, link }) {
 const renderItem = ({ item }) => (
     <BookInfo author={item.author} title={item.title} year={item.year} link={item.link} />
 );
-const styles = StyleSheet.create({
-    container: {
-        flex: 1,
-        marginTop: StatusBar.currentHeight || 0,
-    },
-    item: {
-        padding: 20,
-        marginVertical: 8,
-        marginHorizontal: 16,
-    },
-    title: {
-        fontSize: 20,
-        color: 'black',
-    },
-    separatorLine: {
-        height: 1,
-        backgroundColor: 'plum',
-        paddingTop: 2,
-    },
-});
 
 // eslint-disable-next-line no-unused-vars
 const BookScreen = (props) => {

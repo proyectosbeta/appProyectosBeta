@@ -1,28 +1,7 @@
 /* eslint-disable react/jsx-filename-extension */
 import React from 'react';
-import { View, Text, StyleSheet } from 'react-native';
-
-const styles = StyleSheet.create({
-    container: {
-        flex: 1,
-        alignItems: 'center',
-        justifyContent: 'center',
-    },
-    text: {
-        paddingTop: 25,
-        paddingLeft: 15,
-        fontSize: 15,
-        color: 'black',
-    },
-    footer: {
-        fontSize: 12,
-        flex: 1,
-        alignSelf: 'center',
-        fontWeight: 'bold',
-        marginTop: 16,
-        color: 'black',
-    },
-});
+import { View, Text } from 'react-native';
+import styles from './Styles';
 
 const AboutScreen = () => {
     return (

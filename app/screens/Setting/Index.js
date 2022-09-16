@@ -2,11 +2,12 @@
 import React from 'react';
 import { View } from 'react-native';
 
+import styles from './Styles';
 import Selector from '../../components/LanguageSelector';
 
 const SettingScreen = () => {
     return (
-        <View style={{ flex: 1, backgroundColor: '#fff' }}>
+        <View style={styles.container}>
             <Selector />
         </View>
     );
