@@ -4,11 +4,9 @@ const styles = StyleSheet.create({
     container: {
         flex: 1,
         // marginTop: 10,
-        // backgroundColor: '#fff',
     },
     list: {
         paddingHorizontal: 5,
-        // backgroundColor: '#fff',
     },
     listContainer: {
         alignItems: 'center',
@@ -47,7 +45,6 @@ const styles = StyleSheet.create({
         fontSize: 24,
         flex: 1,
         alignSelf: 'center',
-        color: 'black',
         marginTop: -16,
     },
 });

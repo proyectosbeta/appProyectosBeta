@@ -1,5 +1,9 @@
 # Release Notes
 
+## v0.8.1
+
+-   [fix] Dark mode.
+
 ## v0.8.0
 
 -   [build] Update package json file.

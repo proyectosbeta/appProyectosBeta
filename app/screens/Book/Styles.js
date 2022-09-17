@@ -1,7 +1,5 @@
 import { StyleSheet, StatusBar } from 'react-native';
-import { useTheme } from '@react-navigation/native';
 
-const { colors } = useTheme();
 const styles = StyleSheet.create({
     container: {
         flex: 1,
@@ -14,7 +12,6 @@ const styles = StyleSheet.create({
     },
     title: {
         fontSize: 20,
-        color: colors.text,
     },
     separatorLine: {
         height: 1,
