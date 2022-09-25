@@ -2,21 +2,21 @@
 
 The app for Proyectos Beta (proyectosbeta.net)
 
-# Tecnologies
+## Tecnologies
 
--   React 18.2.0
--   React native 0.70.1
--   NodeJS v14.20.0
--   NPM 8.18.0
--   OpenJDK 17.0.4
--   Gradle 7.5.1
--   Emulator Android Pixel_XL_API_29(AVD)
--   Docker 20.10.17
--   Sonarqube 9.5.XX
+- React 18.2.0
+- React native 0.70.1
+- NodeJS v14.20.1
+- NPM 8.18.0
+- OpenJDK 17.0.4
+- Gradle 7.5.1
+- Emulator Android Pixel_XL_API_29(AVD)
+- Docker 20.10.17
+- Sonarqube 9.5.XX
 
-# Development
+## Development
 
-## Configuration en
+### Configuration en
 
 ```bash
 cp .env.example .env
@@ -28,7 +28,7 @@ Change env variables
 URL_API_BOOKS = "https://books.proyectosbeta.net"
 ```
 
-## Installation
+### Installation
 
 One terminal:
 
@@ -44,13 +44,13 @@ cd android && ./gradlew clean && cd ../
 npx react-native run-android
 ```
 
-# Developer debug
+## Developer debug
 
 ```bash
 cd android && ./gradlew assembleRelease && cd ../
 ```
 
-# Production
+## Production
 
 At the root of the project.
 
@@ -58,26 +58,26 @@ At the root of the project.
 npx react-native run-android --variant=release
 ```
 
-## APK path
+### APK path
 
 The apk is in android/app/build/outputs/apk/release/
 
-## Quality code
+### Quality code
 
-### Sonarqube
+#### Sonarqube
 
--   [Site](https://www.sonarqube.org/)
+- [Site](https://www.sonarqube.org/)
 
-#### Install
+##### Install
 
-##### With docker
+###### With docker
 
 ```bash
 docker pull sonarqube
 docker run -d --name sonarqube -p 9000:9000 -p 9092:9092 sonarqube
 ```
 
-##### Web access
+###### Web access
 
 ```
 http://localhost:9000
@@ -85,17 +85,17 @@ http://localhost:9000
 
 ###### Credentials
 
--   User: admin
--   Password: admin
+- User: admin
+- Password: admin
 
-#### Use with docker
+##### Use with docker
 
 ```bash
 docker pull newtmitch/sonar-scanner
 
 ```
 
-##### GNU-Linux/MacOS
+###### GNU-Linux/MacOS
 
 Execute
 
@@ -103,7 +103,7 @@ Execute
 docker run -ti -v /home/proyectosbeta/repositoriosGit/appProyectosBeta:/usr/src --link sonarqube newtmitch/sonar-scanner
 ```
 
-##### Microsoft Windows
+###### Microsoft Windows
 
 Execute
 
