@@ -2,15 +2,11 @@
 
 ## v0.9.0
 
-- [build] Update package json file.
-- [build] Update react native 0.7.0 to 0.7.4
-
-## v0.8.1
-
 - [fix] Dark mode.
 - [docs] Update readme file.
 - [build] Update prettierrc file.
 - [build] Update package json file.
+- [build] Update react native 0.7.0 to 0.7.4
 
 ## v0.8.0
 
