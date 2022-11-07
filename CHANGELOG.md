@@ -1,5 +1,11 @@
 # Release Notes
 
+## v0.10.0
+
+- [build] Update react native 0.7.4 to 0.7.5
+- [build] Update package json file.
+- [docs] Update readme file.
+
 ## v0.9.0
 
 - [fix] Dark mode.
