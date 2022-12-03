@@ -1,8 +1,13 @@
 # Release Notes
 
+## v0.11.0
+
+- [build] Update react native 0.70.5 to 0.70.6
+- [docs] Update readme file.
+
 ## v0.10.0
 
-- [build] Update react native 0.7.4 to 0.7.5
+- [build] Update react native 0.70.4 to 0.70.5
 - [build] Update package json file.
 - [docs] Update readme file.
 
@@ -12,7 +17,7 @@
 - [docs] Update readme file.
 - [build] Update prettierrc file.
 - [build] Update package json file.
-- [build] Update react native 0.7.0 to 0.7.4
+- [build] Update react native 0.70.0 to 0.70.4
 
 ## v0.8.0
 
